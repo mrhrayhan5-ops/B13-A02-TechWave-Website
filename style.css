@@ -16,13 +16,11 @@
 /* sheared style */
 
 .primary-btn {
-    display: inline-block;
     background: linear-gradient(to left bottom, #FB09B4, #9100F8, #F7E93F);
     color: white;
     font-size: 1.02em;
-    font-weight: 600;
-    width: 135px;
-    height: 44px;
+    font-weight: 550;
+    padding: 15px;
     border: none;
     border-radius: 30px;
     text-align: center;
@@ -43,6 +41,7 @@ hr {
 
 body {
     background-color: #1A0B2E;
+    color: white;
 }
 
 /* navbar related style */
@@ -55,7 +54,6 @@ body {
 }
 
 .brand {
-    color: white;
     font-size: 1.5em;
 }
 
@@ -80,12 +78,79 @@ body {
     display: none;
 }
 
+/* banner related style */
+
+#hero-container {
+    background-image: url(/assets/hero-bg.png);
+    background-size: cover;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-logo {
+    background-image: url(assets/hero-circle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.banner-logo p {
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-size: 1.03em;
+    font-weight: 600;
+    position: absolute;
+    border-radius: 30px;
+    padding: 5px;
+    right: 170px;
+    top: 10px;
+    box-shadow: 3px 3px 30px #00FF88;
+}
+
+.banner-text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    color: rgba(255, 255, 255, 0.644);
+    margin-bottom: 30px;
+}
+
+.subscribe-btn {
+    color: #00FF88;
+    background-color: transparent;
+    font-size: 1.02em;
+    font-weight: 500;
+    padding: 10px;
+    border: 1px solid #00FF88;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.subscribe-btn:hover {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 40px #00FF88;
+    transform: scale(1.04);
+}
+
 /* responsive desing */
 @media screen and (max-width:576px) {
     body {
         width: 100vw;
+
     }
 
+    /* navbar related */
     .brand {
         scale: 0.5em;
     }
@@ -97,5 +162,31 @@ body {
 
     .hamburger-menu {
         display: block;
+    }
+
+    /* banner related style */
+
+    #hero-container {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .banner-content {
+        width: 500px;
+        align-self: center;
+    }
+
+    .spotify {
+        display: block;
+    }
+
+    .btn {
+        display: flex;
+    }
+
+    .banner-logo p {
+        position: fixed;
+        top: 150px;
+        right: 150px;
     }
 }
