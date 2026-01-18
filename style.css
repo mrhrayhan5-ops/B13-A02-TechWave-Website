@@ -1,3 +1,73 @@
-body{
-    background-color: aqua;
+/* font related style */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* sheared style */
+
+.primary-btn {
+    display: inline-block;
+    background: linear-gradient(to left bottom, #FB09B4, #9100F8, #F7E93F);
+    color: white;
+    font-size: 1.02em;
+    font-weight: 600;
+    width: 135px;
+    height: 44px;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 30px #FB09B4;
+    transform: scale(1.04);
+}
+
+/* main style */
+
+body {
+    background-color: #1A0B2E;
+}
+
+/* navbar related style */
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.brand {
+    color: white;
+    font-size: 1.5em;
+}
+
+.logo {
+    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 3em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
 }
