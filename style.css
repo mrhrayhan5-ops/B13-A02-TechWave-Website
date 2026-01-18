@@ -35,6 +35,10 @@
     transform: scale(1.04);
 }
 
+hr {
+    border-color: #310154;
+}
+
 /* main style */
 
 body {
@@ -70,4 +74,28 @@ body {
 .menu a {
     text-decoration: none;
     color: white;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* responsive desing */
+@media screen and (max-width:576px) {
+    body {
+        width: 100vw;
+    }
+
+    .brand {
+        scale: 0.5em;
+    }
+
+    .menu,
+    .primary-btn {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
 }
