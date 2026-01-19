@@ -181,6 +181,65 @@ body {
     margin-bottom: 5px;
 }
 
+/* card related style */
+
+#card-container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 100px 0;
+}
+
+#card-container h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+    padding: 50px;
+}
+
+.premium {
+    grid-row: span 2;
+}
+
+.mobile {
+    grid-column: span 2;
+}
+
+.global {
+    grid-column: span 2;
+}
+
+.interviews {
+    grid-column: span 2;
+}
+
+.card {
+    background-color: #35116562;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 10px #9100F8;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    line-height: 24px;
+    font-size: 1em;
+}
+
 
 
 
@@ -232,7 +291,25 @@ body {
         right: 100px;
     }
 
+    /* about section */
     .achievement {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* card related style */
+    #card-container {
+        width: 95vw;
+        padding-top: 0;
+    }
+
+    .card-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        margin: 0 auto;
+    }
+
+    .premium {
+        grid-row: span 1;
+    }
+
 }
