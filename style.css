@@ -41,6 +41,12 @@ p {
     color: rgba(255, 255, 255, 0.621);
 }
 
+.logo {
+    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* main style */
 
 body {
@@ -59,12 +65,6 @@ body {
 
 .brand {
     font-size: 1.5em;
-}
-
-.logo {
-    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .menu {
@@ -320,6 +320,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: center;
 }
 
 .icon {
@@ -330,9 +331,35 @@ body {
     display: inline-flex;
 }
 
+/* footer related style */
 
+#footer-container {
+    background: url(assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.footer-content {
+    margin: 0 auto;
+    text-align: center;
+}
 
+.footer-content h1 {
+    font-size: 5em;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+    font-size: 1.5em;
+}
 
 
 /* responsive desing */
@@ -411,6 +438,24 @@ body {
 
     .about-host {
         flex-direction: column;
+        text-align: center;
+    }
+
+
+    /* footer related */
+    #footer-container {
+        padding: 30px;
+
+    }
+
+    .footer-content h1 {
+        font-size: 2.5em;
+    }
+
+    .footer-icon {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 2em;
     }
 
 }
