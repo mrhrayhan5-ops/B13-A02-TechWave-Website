@@ -37,6 +37,10 @@ hr {
     border-color: #310154;
 }
 
+p {
+    color: rgba(255, 255, 255, 0.621);
+}
+
 /* main style */
 
 body {
@@ -121,7 +125,6 @@ body {
 }
 
 .banner-text p {
-    color: rgba(255, 255, 255, 0.644);
     margin-bottom: 30px;
 }
 
@@ -143,6 +146,44 @@ body {
     box-shadow: 5px 5px 40px #00FF88;
     transform: scale(1.04);
 }
+
+/* about section related style */
+
+#about {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 3em;
+    font-weight: bold;
+
+}
+
+.about-content p {
+    font-size: 1em;
+    line-height: 20px;
+    margin: 2em;
+}
+
+.achievement {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding: 3em;
+    text-align: center;
+}
+
+.achievement h1 {
+    font-size: 3em;
+    color: #00FF88;
+    margin-bottom: 5px;
+}
+
+
+
+
 
 /* responsive desing */
 @media screen and (max-width:576px) {
@@ -186,8 +227,12 @@ body {
     }
 
     .banner-logo p {
-        position: fixed;
-        top: 150px;
-        right: 150px;
+        position: absolute;
+        top: 10px;
+        right: 100px;
+    }
+
+    .achievement {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
